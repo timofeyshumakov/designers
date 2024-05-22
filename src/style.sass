@@ -1,0 +1,169 @@
+@import "vars.sass"
+
+/*#fonts*/
+@font-face
+  font-style: regular
+  font-weight: 400
+  font-display: swap
+  font-family: "Roboto"
+  src: local("Roboto-Regular")
+//  src: url("../public/fonts/Roboto-Regular.woff2") format("woff2")
+//  src: url("../public/fonts/Roboto-Regular.woff") format("woff")
+  src: url("../public/fonts/Roboto-Regular.ttf") format("ttf")
+
+/*#scrollbar*/
+::-webkit-scrollbar-track
+  background-color: $black
+
+::-webkit-scrollbar-thumb
+  border-radius: 0.5rem
+
+::-webkit-scrollbar-thumb:active
+  background-color: $yellow
+  border: 0.1rem solid $yellow
+
+::-webkit-scrollbar
+  width: 0.6rem
+
+/*#common*/
+body
+  font: 400 16px /1 $ff, regular
+  color: $black
+  background: $yellow
+
+button
+    background: transparent
+
+.container
+  display: flex
+  flex-direction: column
+  padding: 0 2rem
+  margin: 0 auto
+  box-sizing: content-box
+  max-width: 71rem
+  justify-content: space-between
+
+.header
+    font-size: 0.75rem
+
+h1
+    font-size: 610%
+    letter-spacing: 0.04em
+    line-height: 0.81
+
+h1 p
+    margin-top: 0.9rem
+
+.header__
+
+    &container
+        justify-content: flex-end
+        flex-direction: row
+        gap: 20.8%
+        align-items: center
+        max-width: 66rem
+
+    &menu
+        display: flex
+        gap: 3.5em
+
+.menu__
+
+    &link
+        font-size: 1em
+        line-height: 6
+        text-transform: uppercase
+        letter-spacing: 0.12em
+
+.menu .top
+    font-size: 0.67em
+    position: absolute
+    line-height: 5.5
+    letter-spacing: 0.12em
+    margin-left: 0.3em
+
+.login
+    font-size: 1em
+    line-height: 3.5
+    letter-spacing: 0.08em
+    text-transform: uppercase
+    color: #fff
+
+.promo
+    padding: 12.8rem 0 4.7rem
+    font-size: 1.5rem
+
+.promo__
+
+    &container
+        gap: 1.4em
+        max-width: 71rem
+
+    &details
+        display: flex
+        justify-content: flex-end
+        cursor: default
+
+    &details-img
+        cursor: pointer
+
+    &info
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        margin-top: 1.065em
+        line-height: 1.38
+        grid-gap: 1em
+
+    &info-row:nth-child(1)
+        max-width: 12.7em
+        
+    &info-row:nth-child(2)
+        max-width: 13em
+        margin-left: 0.2em
+        margin-top: -0.2em
+
+.action-button
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 19.5em
+    height: 4.5em
+    justify-self: end
+
+.action-button__
+
+    &txt
+        position: absolute
+        font-size: 1.6em
+        line-height: 1.76
+        margin-left: 2.4em
+
+.editor
+    padding: 3.8rem 0
+    background-image: url("../public/img/editor/bg.jpg")
+    background-size: cover
+
+.editor__
+
+    &container
+        gap: 10.4rem
+
+    &img
+        width: 100%
+
+.designers
+    padding: 3.7rem 0 2rem
+    font-size: 0.81rem
+
+.designers .section-title
+    color: $black
+
+.designers .section-title__top-title-txt
+    font-size: 1em
+    color: $black
+
+.designers .section-title__top-title-line
+    border-top: 0.08em solid $black
+
+.designers .section-title__title
+    font-size: 3em
